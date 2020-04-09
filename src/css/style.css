@@ -1,0 +1,166 @@
+:root {
+ --background: #2D2D2D;
+ --font-color: #DDDDDD;
+ --font-color-secondary: #AAAAAA;
+ --contrast: #29ABE2;
+ --font-big: 2em;
+ --font-medium: 1.2em;
+ --font-small: 0.9em;
+}
+
+html {
+ background-color: var(--background);
+}
+
+body {
+ max-width: 1102px;;
+ margin: 0 auto;
+ font-family: sans-serif;
+ color: var(--font-color);
+}
+
+header {
+ width: 100%;
+ height: 80px;
+ display: flex;
+ font-size: var(--font-medium);
+ justify-content: space-between;
+ align-items: center;
+}
+
+header div {
+ display: flex;
+ align-items: center;
+}
+
+header div img {
+ height: 30px;
+ margin-right: 10px;
+}
+
+header div span {
+ font-size: 20px
+}
+
+header nav ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ overflow: hidden;
+}
+
+header nav ul li {
+ float: left;
+ margin: 15px;
+ font-size: 17px
+}
+
+section {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ flex-wrap:wrap;
+}
+
+section div {
+ width: 50%;
+}
+
+#inicio,
+#features {
+ height: calc(100vh - 80px);
+ line-height: 1.6;
+}
+
+#inicio h1 {
+ font-size: 25px;
+}
+
+#inicio p {
+ width: 70%;
+ color: var(--font-color-secondary)
+}
+
+#inicio div:nth-child(2) {
+ display: flex;
+
+}
+
+#inicio img {
+ width: 95%;
+ height: auto;
+ align-self: flex-start;
+}
+
+#inicio button {
+ display: inline-block;
+ border: none;
+ padding: 1rem 2rem;
+ margin: 0;
+ text-decoration: none;
+ background: var(--font-color-secondary);
+ color: #ffffff;
+ font-family: sans-serif;
+ font-size: 1rem;
+ line-height: 1;
+ cursor: pointer;
+ text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+ section div {
+width: 100%
+ }
+}
+
+/* Features */
+
+#features h1 {
+ text-align: right;
+}
+
+#features p {
+ padding-left: 34%;
+ text-align: right;
+ color: var(--font-color-secondary)
+}
+
+.features-menu {
+  width: 551px;
+  box-sizing: border-box;
+  height: 35px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.features-button {
+ content:url(/img/feature-menu.svg);
+ height: 18px;
+ width: 18px;
+ position: relative;
+ top: 10px;
+ left: 14px;
+ display: inline-block;
+}
+
+.features-screen {
+ background-color: #15151500;
+ width: 515px;
+ padding: 15px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+
+.features-icons ul li{
+ list-style-type: none;
+ flex-direction: column;
+ margin-bottom: 25px;
+}
+
+.features-icons img {
+ height: 36px;
+ width: 36px;
+}
