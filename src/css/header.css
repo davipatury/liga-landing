@@ -1,0 +1,35 @@
+header {
+ height: 30px;
+ display: flex;
+ font-size: var(--font-medium);
+ justify-content: space-between;
+ align-items: center;
+}
+
+header .logo-liga {
+ display: flex;
+ align-items: center;
+}
+
+header .logo-img {
+ height: 25px;
+ margin-right: 10px;
+}
+
+header span {
+ font-size: 1.1em;
+}
+
+header nav ul {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+nav li {
+ list-style: none;
+}
+
+nav a {
+ padding-left: 27px;
+}
