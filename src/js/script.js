@@ -22,3 +22,19 @@ const container = document.querySelector('.command');
 const blink = document.querySelector('.blink');
 
 let fullMessage = setInterval(typeMessage, 30);
+
+/*Feature */
+const lista = document.getElementById("feature-list");
+          const listaBotoes = Array.from(lista.children);
+          
+          const textContainer = document.getElementById("feature-container");
+          const listaText = Array.from(textContainer.children);
+
+          listaBotoes.forEach((botao, indexBotao) => {
+            botao.addEventListener("click", (e) => {
+              listaText.forEach((text, indexText) => {
+                const displayType = indexBotao === indexText ? "grid" : "none";
+                text.style.display = displayType;
+              });
+            });
+          });
