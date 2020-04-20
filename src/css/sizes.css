@@ -1,0 +1,189 @@
+@media screen and (min-width: 1500px) {
+
+}
+
+@media screen and (max-width: 500px) {
+ section {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   text-align: left;
+ }
+
+section h1 {
+  width: 76vw;
+}
+
+h1 {
+ font-size: 1.7em;
+}
+
+.body-container {
+ max-width: 81vw;
+ padding-top: 32px;
+}
+
+#inicio {
+  margin-top: 13vh;
+  height: calc(119vh - 100px);
+}
+
+#inicio p {
+ width: 77vw;
+}
+
+ header span {
+  display: none;
+ }
+
+ #inicio button {
+  margin-top: 3vh;
+  margin-bottom: 11vh;
+}
+
+ #features {
+  height: calc(118vh - 100px);
+  flex-direction: column-reverse;
+ }
+
+ #features h1 {
+  text-align: left;
+ }
+
+ #features .txt-feat p {
+  padding-left: 0;
+  text-align: left;
+  color: var(--font-color-secondary);
+ }
+
+ .terminal-1, .terminal-2, .terminal-3 {
+  margin-left: 0vw;
+ }
+
+ .txt-feat {
+  margin-bottom: 5vh;
+ }
+
+ .feat-screen {
+  margin-left: 12vw;
+ }
+
+ .features-menu {
+  width: 283px;
+ }
+
+ .feature-text {
+  width: 54vw;
+  height: 56.9vh;
+  margin-left: 4vw;
+}
+
+.features-screen {
+  width: 283px;
+  height: 365px;
+}
+
+ #projects {
+  margin-top: 8vh;
+ }
+
+ #projects p {
+  text-align: left;
+  padding-right: 0;
+ }
+
+ .txt-projects {
+  margin-bottom: 4vh;
+ }
+
+ .box-projects {
+  display: flex;
+  flex-direction: column;
+  flex-flow: nowrap;
+ }
+}
+
+@media screen and (max-width: 400px) {
+ #inicio {
+  margin-top: 6vh;
+ }
+
+ #features {
+  height: calc(125vh - 100px);
+ }
+
+ section h1 {
+  width: 71vw;
+ }
+
+ .feat-screen {
+  margin-left: 10vw;
+ }
+
+ .features-menu,
+ .features-screen {
+  width: 247px;
+ }
+
+ .feature-text {
+  width: 45vw;
+  height: 53.9vh;
+  margin-left: 4vw;
+ }
+
+ .features-icons {
+  margin: 76% 0% 0 23%;
+ }
+}
+
+@media screen and (max-width: 360px) {
+ #features {
+  height: calc(139vh - 100px);
+ }
+
+ .feature-text {
+    width: 51vw;
+    height: 56.9vh;
+ }
+
+ .feature-text img {
+  width: 87%;
+ }
+
+ .feature-text p {
+  font-size: 0.9em;
+  padding: 0;
+}
+
+ .img-start {
+  width: 130px;
+ }
+
+ .txt-start {
+  font-size: 0.8em;
+ }
+
+ .features-icons {
+  margin: 61% 0% 0 23%;
+ }
+}
+
+@media screen and (max-width: 320px) {
+ #features {
+  height: calc(182vh - 100px);
+ }
+
+ .feature-text {
+  width: 61vw;
+  height: 63.9vh;
+ }
+
+ #projects {
+  height: calc(86vh - 80px);
+  line-height: 1.6;
+ }
+
+ .feat-screen {
+  margin-left: 3vw;
+ }
+}

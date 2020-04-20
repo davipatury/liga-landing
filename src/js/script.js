@@ -1,3 +1,20 @@
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  //Toggle Nav
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
+
+
+
+
+
 const command = ['n', 'p', 'm', ' ', 'i', 'n', 's', 't', 'a', 'l', 'l', ' ', 'l', 'i', 'g', 'a', '-', 'p', 'r', 'o', 'g', 'r', 'a', 'm', 'a', 'd', 'o', 'r', 'e', 's'];
 const adder = 2;
 let message ='';

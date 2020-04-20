@@ -10,29 +10,41 @@
   <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
   <link rel="stylesheet" type="text/css" href="src/css/header.css">
+  <link rel="stylesheet" type="text/css" href="src/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="src/css/sizes.css">
+
+  <script src="https://kit.fontawesome.com/cedc6ec192.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="body-container">
     <header>
       <div class="logo-liga">
         <img class="logo-img" src="src/img/logo_liga.svg" alt="Logo da Liga dos Programadores" />
         <span>Liga dos Programadores</span>
       </div>
       <nav>
-        <ul>
+
+
+        <ul class="nav-links">
           <li><a href="">Desafios</a></li>
           <li><a href="">Blog</a></li>
         </ul>
       </nav>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
     </header>
 
     <main>
       <section id="inicio">
         <div>
           <h1>Uma comunidade aberta onde todos podem compartilhar seus conhecimentos.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.
-            Donec
-            ullamcorpe.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.</p>
           <button> Quero fazer parte</button>
         </div>
 
@@ -97,27 +109,32 @@
 
               <div class="feature-text">
                 <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor. Donec ullamcorpe.</p>
+                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
+                  elementum porttitor.</p>
               </div>
 
               <div class="feature-text">
                 <img id="img-start" src="./src/img/techs.png" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor. Donec ullamcorpe.</p>
+                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
+                  elementum porttitor. Donec ullamcorpe.</p>
               </div>
 
               <div class="feature-text">
                 <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor. Donec ullamcorpe.</p>
+                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
+                  elementum porttitor. Donec ullamcorpe.</p>
               </div>
 
               <div class="feature-text">
                 <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor. Donec ullamcorpe.</p>
+                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
+                  elementum porttitor. Donec ullamcorpe.</p>
               </div>
 
               <div class="feature-text">
                 <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor. Donec ullamcorpe.</p>
+                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
+                  elementum porttitor. Donec ullamcorpe.</p>
               </div>
 
             </div>
@@ -126,32 +143,70 @@
 
         <div class="txt-feat">
           <h1>A comunidade</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.
-            Donec ullamcorpe.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.</p>
         </div>
       </section>
 
       <section id="projects">
         <div class="txt-projects">
           <h1>Os projetos</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.
-            Donec ullamcorpe.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.</p>
         </div>
         <div class="box-projects">
           <div class="item">
-          <a href="#">
-            <img src="/src/img/projecta.png" alt="" class="img-responsive" />
-          </a>
+            <a href="#">
+              <img src="/src/img/projecta.png" alt="" class="img-responsive" />
+            </a>
           </div>
           <div class="item">
             <a href="#">
               <img src="/src/img/projecta.png" alt="" class="img-responsive" />
             </a>
-            </div>
+          </div>
         </div>
       </section>
     </main>
-    <script src="./src/js/script.js"></script>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+
+      <div class="f_left">
+        <p class="copyright">&copy; 2020. Liga dos Programadores - Todos os direitos reservados.</p>
+      </div>
+
+      <div class="f_right">
+        <div class="f_social">
+          <div class="f_icons">
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-discord"></i></a>
+            <a href=""><i class="fab fa-github-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer-container">
+      <div class="footer-brand">
+        <a href=""><img src="./src/img/logo.png" alt="Logo da Liga dos Programadores"></a>
+        <div class="footer-copyright">
+          <span>&copy; Liga dos Programadores - Todos os direitos reservados</span>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <ul class="social-links">
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-discord"></i></li>
+          <li><i class="fab fa-github-square"></i></li>
+        </ul>
+      </div>
+
+    </div> -->
+  </footer>
+
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>
