@@ -42,18 +42,6 @@ footer {
 
 
 @media only screen and (max-width: 900px) {
- .footer-wrapper {
-  display: block;
- }
-
- .f_icons {
-  text-align: center;
-  margin-top: 4vh;
-  margin-left: 0;
- }
-
- footer p {
-   text-align: center;
- }
+ 
 }
 
