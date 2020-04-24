@@ -1,4 +1,4 @@
 # Liga Landing
-<img src="https://i.imgur.com/7xeSXbl.png"><br>
+<img src="https://i.imgur.com/SbFflec.png"><br>
 
 
