@@ -1,96 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Liga dos Programadores</title>
-  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="src/css/style.css">
-  <link rel="stylesheet" type="text/css" href="src/css/header.css">
-  <link rel="stylesheet" type="text/css" href="src/css/footer.css">
-  <link rel="stylesheet" type="text/css" href="src/css/sizes.css">
-
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/css/normalize.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/header.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/footer.css" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700&display=swap"
+    rel="stylesheet" />
 
   <script src="https://kit.fontawesome.com/cedc6ec192.js" crossorigin="anonymous"></script>
-  
 </head>
 
 <body>
-  <div class="body-container">
-    <header>
+  <header>
+    <div class="container">
       <div class="logo-liga">
         <img class="logo-img" src="src/img/logo_liga.svg" alt="Logo da Liga dos Programadores" />
-        <span>Liga dos Programadores</span>
+        <p>Liga dos Programadores</p>
       </div>
-      <nav>
-
-
-        <ul class="nav-links">
-          <li><a href="">Desafios</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-      </nav>
-
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Desafios</a>
+            </li>
+            <li>
+              <a href="">Estudos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h1>
+          Uma comunidade aberta onde todos podem compartilhar seus conhecimentos.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor
+          tortor et elementum porttitor.
+        </p>
+        <a href="#" class="button">Quero fazer parte</a>
       </div>
 
-    </header>
-
-    <main>
-      <section id="inicio">
-        <div>
-          <h1>Uma comunidade aberta onde todos podem compartilhar seus conhecimentos.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.</p>
-          <button> Quero fazer parte</button>
+      <div class="inicio-terminal">
+        <div class="terminal-1">
+          <div class="terminal-menu">
+            <div class="terminal-icon"></div>
+            <div class="terminal-icon"></div>
+            <div class="terminal-icon"></div>
+          </div>
+          <div class="inicio-screen">
+            <p class="line1">$ hello world<span class="cursor1">_</span></p>
+            <p></p>
+          </div>
         </div>
 
-        <div class="inicio-terminal">
-          <div class="terminal-1">
-            <div class="terminal-menu">
-              <div class="terminal-icon"></div>
-              <div class="terminal-icon"></div>
-              <div class="terminal-icon"></div>
-            </div>
-            <div class="inicio-screen">
-              <p class="line1">$ hello world<span class="cursor1">_</span></p>
-              <p></p>
-            </div>
+        <div class="terminal-2">
+          <div class="terminal-menu">
+            <div class="terminal-icon"></div>
+            <div class="terminal-icon"></div>
+            <div class="terminal-icon"></div>
           </div>
-
-          <div class="terminal-2">
-            <div class="terminal-menu">
-              <div class="terminal-icon"></div>
-              <div class="terminal-icon"></div>
-              <div class="terminal-icon"></div>
-            </div>
-            <div class="inicio-screen">
-              <span class="prompt">$</span>
-              <span class="command"></span>
-              <div class="blink"></div>
-            </div>
-          </div>
-
-          <div class="terminal-3">
-            <div class="terminal-menu">
-              <div class="terminal-icon"></div>
-              <div class="terminal-icon"></div>
-              <div class="terminal-icon"></div>
-            </div>
-            <div class="inicio-screen">
-              <p class="line1">$ welcome<span class="cursor1">_</span></p>
-            </div>
+          <div class="inicio-screen">
+            <span class="prompt">$</span>
+            <span class="command"></span>
+            <div class="blink"></div>
           </div>
         </div>
-      </section>
 
-      <section id="features">
+        <div class="terminal-3">
+          <div class="terminal-menu">
+            <div class="terminal-icon"></div>
+            <div class="terminal-icon"></div>
+            <div class="terminal-icon"></div>
+          </div>
+          <div class="inicio-screen">
+            <p class="line1">$ welcome<span class="cursor1">_</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="features">
+      <div class="container">
         <div class="feat-screen">
           <div class="features-menu">
             <div class="features-button"></div>
@@ -100,60 +105,75 @@
           <div class="features-screen">
             <div class="features-icons">
               <ul id="feature-list">
-                <li><img src="src/img/start-icon.svg" alt=""></li>
-                <li><img src="src/img/newtechs-icon.svg" alt=""></li>
-                <li><img src="src/img/question-icon.svg" alt=""></li>
-                <li><img src="src/img/book.svg" alt=""></li>
-                <li><img src="src/img/leader.svg" alt=""></li>
+                <li><img src="src/img/start-icon.svg" alt="" /></li>
+                <li><img src="src/img/newtechs-icon.svg" alt="" /></li>
+                <li><img src="src/img/question-icon.svg" alt="" /></li>
+                <li><img src="src/img/book.svg" alt="" /></li>
+                <li><img src="src/img/leader.svg" alt="" /></li>
               </ul>
             </div>
 
             <div class="feature-container" id="feature-container">
-
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
-                  elementum porttitor.</p>
+                <img id="img-start" src="./src/img/gaming.svg" alt="" />
+                <p id="txt-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                  auctor tortor et elementum porttitor.
+                </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/techs.png" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
-                  elementum porttitor. Donec ullamcorpe.</p>
+                <img id="img-start" src="./src/img/techs.png" alt="" />
+                <p id="txt-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
-                  elementum porttitor. Donec ullamcorpe.</p>
+                <img id="img-start" src="./src/img/gaming.svg" alt="" />
+                <p id="txt-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
-                  elementum porttitor. Donec ullamcorpe.</p>
+                <img id="img-start" src="./src/img/gaming.svg" alt="" />
+                <p id="txt-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="">
-                <p id="txt-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et
-                  elementum porttitor. Donec ullamcorpe.</p>
+                <img id="img-start" src="./src/img/gaming.svg" alt="" />
+                <p id="txt-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                </p>
               </div>
-
             </div>
           </div>
         </div>
-
-        <div class="txt-feat">
-          <h1>A comunidade</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.</p>
+        <div class="text-features">
+          <h2>A comunidade</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor
+            tortor et elementum porttitor.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects">
+    <section class="projects">
+      <div class="container">
         <div class="txt-projects">
-          <h1>Os projetos</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor tortor et elementum porttitor.</p>
+          <h2>Os projetos</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor
+            tortor et elementum porttitor.
+          </p>
         </div>
         <div class="box-projects">
           <div class="item">
@@ -167,17 +187,169 @@
             </a>
           </div>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
 
-  <footer>
+    <section class="team">
+      <div class="container">
+        <div class="txt-team">
+          <h2>Nossa equipe</h2>
+        </div>
+
+        <div class="cards">
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="/src/img/cat.jpg" alt="Avatar" />
+            </div>
+            <div class="card-content">
+              <p class="title-card">Mariana Morais</p>
+              <div class="card-info">
+                <p class="text--medium">Desenvolvedora junior</p>
+                <div class="card-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
     <div class="footer-wrapper">
-
       <div class="f_left">
         <p class="copyright">&copy; 2020. Liga dos Programadores - Todos os direitos reservados.</p>
       </div>
-
       <div class="f_right">
         <div class="f_social">
           <div class="f_icons">
@@ -189,26 +361,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="footer-container">
-      <div class="footer-brand">
-        <a href=""><img src="./src/img/logo.png" alt="Logo da Liga dos Programadores"></a>
-        <div class="footer-copyright">
-          <span>&copy; Liga dos Programadores - Todos os direitos reservados</span>
-        </div>
-      </div>
-
-      <div class="footer-social">
-        <ul class="social-links">
-          <li><i class="fab fa-twitter"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-discord"></i></li>
-          <li><i class="fab fa-github-square"></i></li>
-        </ul>
-      </div>
-
-    </div> -->
   </footer>
-
   <script src="./src/js/script.js"></script>
 </body>
 
