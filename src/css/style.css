@@ -24,8 +24,8 @@ body {
 }
 
 h1 {
- font-size: 4rem;
- line-height: 7.8rem;
+ font-size: 4.5rem;
+ line-height: 6.8rem;
 }
 
 h2 {
@@ -134,27 +134,13 @@ section.hero p {
  color: #5F5F5E;
 }
 
-.commandline {
- position: absolute;
- display: flex;
- top: 40px;
- width: 100%;
- height: 15%;
- padding: 15px;
- color: #EFEFF2;
+.console-underscore {
+ display:inline-block;
+position:relative;
+top:-0.14em;
 }
-
-.blink {
- display: inline;
- margin-left: 3px;
- width: 10px;
- height: 25px;
- background: #EFEFF2;
- transition: all 0.35s;
- animation: blinking 1s infinite;
-}
-
 /*== MAIN ==*/
+
 main {
  margin-bottom: 80px;
 }
@@ -216,6 +202,7 @@ section.features p {
  padding: 15px;
  padding-top: 32px;
  border-bottom-left-radius: 5px;
+ border-top-right-radius: 10px;
 }
 
 .features-screen {
@@ -226,6 +213,8 @@ section.features p {
  border-bottom-right-radius: 5px;
  border-top: 0px;
  background-color: #292E39;
+ transition:  0.5s ease-out;
+ transition-delay: 0.3s;
 }
 
 .features-icons ul li {
@@ -237,17 +226,26 @@ section.features p {
 .features-icons img {
  height: 36px;
  width: 36px;
+ cursor: pointer;
+ transition:  0.5s ease-in-out;
+}
+
+.features-icons li:hover{
+ background-color: #29ABE2;
+ padding: 3px 6px 3px 6px;
+ border-radius: 5px;
+ transition:  0.5s ease-in-out;
 }
 
 .feature-text {
  width: 100%;
- padding: 10%;
+ padding: 6%;
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-items: center;
- background-color: rgb(31, 33, 41);
- border-bottom-right-radius: 5px;
+ background-color: #1f2129;
+ border-radius: 5px;
 }
 
 section.features .feature-text p {
@@ -261,6 +259,23 @@ section.features .feature-text p {
 
 .feature-text:not(:first-child) {
  display: none;
+}
+
+#img-techs {
+ width: 48%;
+}
+
+#img-doubt  {
+ width: 33%;
+ color: #DDDDDD;
+}
+
+#img-files {
+ width: 33%;
+}
+
+#img-leader {
+ width: 33%;
 }
 
 /*== PROJECTS ==*/
@@ -327,24 +342,22 @@ section.team h2 {
 .card {
  display: flex;
  flex-direction: column;
- background-color: #292E39;
- padding: 10px 13px 0px 13px;
+ background-color: #DDDDDD;
+ padding: 27px 18px 0px 18px;
  text-align: center;
  border-radius: 5px;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
- transition: all 0.3s ease 0s;
  transition: 0.3s;
  cursor: pointer;
 }
 
 .card:hover {
- transform: translateY(-7px);
+ transform: translateY(-2px);
  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-content {
  margin: 20px;
- text-align: left;
 }
 
 .card-image>img {
@@ -352,18 +365,20 @@ section.team h2 {
  border-radius: 5px;
  text-align: center;
  overflow: hidden;
+ clip-path: polygon(51% 0, 100% 27%, 100% 78%, 50% 100%, 0 76%, 0 26%);
 }
 
 .title-card {
- font-weight: 500;
+ font-weight: 550;
  font-size: 2.3rem;
+ color: rgb(36, 36, 36);
 }
 
 .text--medium {
  font-size: 16px;
  line-height: 26px;
  font-weight: 400;
- color: #ecf0f1;
+ color: black;
 }
 
 .card-social {
@@ -375,10 +390,9 @@ section.team h2 {
 }
 
 .card-social i {
- color: rgb(163, 163, 163);
+ color: rgb(61, 61, 61);
 }
 
 .card-social i:hover {
  color: #29ABE2
 }
-

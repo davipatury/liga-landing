@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="stylesheet" type="text/css" href="src/css/header.css" />
   <link rel="stylesheet" type="text/css" href="src/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/responsive.css" />
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700&display=swap"
     rel="stylesheet" />
 
@@ -45,7 +46,7 @@
     <div class="container">
       <div>
         <h1>
-          Uma comunidade aberta onde todos podem compartilhar seus conhecimentos.
+          Uma comunidade onde todos podem compartilhar seus conhecimentos.
         </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor
@@ -55,6 +56,7 @@
       </div>
 
       <div class="inicio-terminal">
+
         <div class="terminal-1">
           <div class="terminal-menu">
             <div class="terminal-icon"></div>
@@ -62,8 +64,11 @@
             <div class="terminal-icon"></div>
           </div>
           <div class="inicio-screen">
-            <p class="line1">$ hello world<span class="cursor1">_</span></p>
-            <p></p>
+            <div class="command">
+              <div class='console-container'><span class="prompt">$</span><span id='text1'></span>
+                <div class='console-underscore' id='console'>&#95;</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -74,9 +79,11 @@
             <div class="terminal-icon"></div>
           </div>
           <div class="inicio-screen">
-            <span class="prompt">$</span>
-            <span class="command"></span>
-            <div class="blink"></div>
+            <div class="command">
+              <div class='console-container'><span class="prompt">$</span><span id='text2'></span>
+                <div class='console-underscore' id='console'>&#95;</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -87,10 +94,15 @@
             <div class="terminal-icon"></div>
           </div>
           <div class="inicio-screen">
-            <p class="line1">$ welcome<span class="cursor1">_</span></p>
+            <div class="command">
+              <div class='console-container'><span class="prompt">$</span><span id='text3'></span>
+                <div class='console-underscore' id='console'>&#95;</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <main>
@@ -114,6 +126,7 @@
             </div>
 
             <div class="feature-container" id="feature-container">
+
               <div class="feature-text">
                 <img id="img-start" src="./src/img/gaming.svg" alt="" />
                 <p id="txt-start">
@@ -123,34 +136,34 @@
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/techs.png" alt="" />
-                <p id="txt-start">
+                <img id="img-techs" src="./src/img/techs.png" alt="" />
+                <p id="txt-techs">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                  auctor tortor et elementum porttitor.
                 </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="" />
-                <p id="txt-start">
+                <img id="img-doubt" src="./src/img/question2.png" alt="" />
+                <p id="txt-doubt">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                  auctor tortor et elementum porttitor.
                 </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="" />
-                <p id="txt-start">
+                <img id="img-files" src="./src/img/share.png" alt="" />
+                <p id="txt-files">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                  auctor tortor et elementum porttitor.
                 </p>
               </div>
 
               <div class="feature-text">
-                <img id="img-start" src="./src/img/gaming.svg" alt="" />
-                <p id="txt-start">
+                <img id="img-leader" src="./src/img/leader.png" alt="" />
+                <p id="txx-leader">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                  auctor tortor et elementum porttitor. Donec ullamcorpe.
+                  auctor tortor et elementum porttitor.
                 </p>
               </div>
             </div>

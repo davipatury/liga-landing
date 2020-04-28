@@ -1,0 +1,57 @@
+@media (max-width: 630px) {
+
+ .hero .container,
+ .features .container,
+ .projects .container {
+  flex-direction: column;
+  text-align: left;
+ }
+
+ section.hero {
+  margin: 32px 0 138px;
+ }
+
+ header p {
+  display: none;
+ }
+
+ .button {
+  margin-bottom: 40px;
+ }
+
+ .terminal-1,
+ .terminal-2,
+ .terminal-3 {
+  margin: 0 auto;
+ }
+
+ .terminal-menu,
+ .inicio-screen {
+  width: 200px;
+ }
+
+ section.features .container {
+  flex-direction: column-reverse;
+ }
+
+ .text-features {
+  margin: 0;
+  padding-left: 0;
+ }
+
+ section.features h2,
+ section.features p {
+  text-align: left;
+ }
+ 
+ .features-menu,
+ .features-screen {
+  width: 327px;
+ }
+
+ section.features .feature-text p {
+  text-align: left;
+  padding: 0;
+}
+
+}
