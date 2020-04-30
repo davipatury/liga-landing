@@ -5,13 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Liga dos Programadores</title>
-  <link rel="stylesheet" type="text/css" href="src/css/normalize.css" />
   <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="src/css/header.css" />
   <link rel="stylesheet" type="text/css" href="src/css/footer.css" />
   <link rel="stylesheet" type="text/css" href="src/css/responsive.css" />
+
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
   <script src="https://kit.fontawesome.com/cedc6ec192.js" crossorigin="anonymous"></script>
 </head>
@@ -42,7 +44,7 @@
       </div>
     </div>
   </header>
-  <section class="hero">
+  <section class="animated fadeIn delay-0.9s hero">
     <div class="container">
       <div>
         <h1>
@@ -103,7 +105,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <main>
     <section class="features">
@@ -117,17 +118,27 @@
           <div class="features-screen">
             <div class="features-icons">
               <ul id="feature-list">
-                <li><img src="src/img/start-icon.svg" alt="" /></li>
-                <li><img src="src/img/newtechs-icon.svg" alt="" /></li>
-                <li><img src="src/img/question-icon.svg" alt="" /></li>
-                <li><img src="src/img/book.svg" alt="" /></li>
-                <li><img src="src/img/leader.svg" alt="" /></li>
+                <li>
+                  <div class="icon-background"><img src="src/img/start-icon.svg" alt="" /></div>
+                </li>
+                <li>
+                  <div class="icon-background"><img src="src/img/newtechs-icon.svg" alt="" /></div>
+                </li>
+                <li>
+                  <div class="icon-background"><img src="src/img/question-icon.svg" alt="" /></div>
+                </li>
+                <li>
+                  <div class="icon-background"><img src="src/img/book.svg" alt="" /></div>
+                </li>
+                <li>
+                  <div class="icon-background"><img src="src/img/leader.svg" alt="" /></div>
+                </li>
               </ul>
             </div>
 
             <div class="feature-container" id="feature-container">
 
-              <div class="feature-text">
+              <div class="animated fadeIn delay-0.8s feature-text">
                 <img id="img-start" src="./src/img/gaming.svg" alt="" />
                 <p id="txt-start">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -135,7 +146,7 @@
                 </p>
               </div>
 
-              <div class="feature-text">
+              <div class="animated fadeIn delay-0.8s feature-text">
                 <img id="img-techs" src="./src/img/techs.png" alt="" />
                 <p id="txt-techs">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -143,7 +154,7 @@
                 </p>
               </div>
 
-              <div class="feature-text">
+              <div class="animated fadeIn delay-0.8s feature-text">
                 <img id="img-doubt" src="./src/img/question2.png" alt="" />
                 <p id="txt-doubt">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -151,7 +162,7 @@
                 </p>
               </div>
 
-              <div class="feature-text">
+              <div class="animated fadeIn delay-0.8s feature-text">
                 <img id="img-files" src="./src/img/share.png" alt="" />
                 <p id="txt-files">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -159,7 +170,7 @@
                 </p>
               </div>
 
-              <div class="feature-text">
+              <div class="animated fadeIn delay-0.8s feature-text">
                 <img id="img-leader" src="./src/img/leader.png" alt="" />
                 <p id="txx-leader">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
@@ -375,7 +386,7 @@
       </div>
     </div>
   </footer>
-  <script src="./src/js/script.js"></script>
+  <script src="./src/js/scripts.js"></script>
+  <script src="./src/js/menu.js"></script>
 </body>
-
 </html>

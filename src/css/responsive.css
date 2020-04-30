@@ -1,57 +1,251 @@
-@media (max-width: 630px) {
+@media (max-width: 1124px) {
+  header .container {
+    max-width: 850px;
+  }
 
- .hero .container,
- .features .container,
- .projects .container {
-  flex-direction: column;
-  text-align: left;
- }
+  section.hero .container,
+  section.features .container,
+  section.projects .container,
+  section.team .container {
+    max-width: 850px;
+    flex-direction: column;
+    text-align: left;
+  }
 
- section.hero {
-  margin: 32px 0 138px;
- }
+  section.hero {
+    margin: 40px 0 0px;
+  }
 
- header p {
-  display: none;
- }
+  .terminal-1,
+  .terminal-2,
+  .terminal-3 {
+    margin: 0 auto;
+  }
 
- .button {
-  margin-bottom: 40px;
- }
+  .button {
+    margin: 19px 0 80px 0;
+  }
 
- .terminal-1,
- .terminal-2,
- .terminal-3 {
-  margin: 0 auto;
- }
+  section.features .container {
+    flex-direction: column-reverse;
+  }
 
- .terminal-menu,
- .inicio-screen {
-  width: 200px;
- }
+  .text-features {
+    margin: 0;
+    padding-left: 0;
+  }
 
- section.features .container {
-  flex-direction: column-reverse;
- }
+  section.features p,
+  section.features h2 {
+    text-align: left;
+    padding: 0;
+  }
 
- .text-features {
-  margin: 0;
-  padding-left: 0;
- }
+  .feat-screen {
+    margin-top: 45px;
+    text-align: -webkit-center;
+  }
 
- section.features h2,
- section.features p {
-  text-align: left;
- }
- 
- .features-menu,
- .features-screen {
-  width: 327px;
- }
+  .features-menu,
+  .features-screen {
+    text-align: left;
+  }
 
- section.features .feature-text p {
-  text-align: left;
-  padding: 0;
+  section.projects {
+    margin: 80px 0;
+  }
+
+  section.projects p {
+    margin-bottom: 50px;
+  }
+
+  .projects p {
+    padding-right: 0;
+  }
+
+  .box-projects {
+    margin: 0;
+    justify-content: center;
+  }
+
+  section.team h2 {
+    margin-bottom: 15%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 205px;
+    grid-row-gap: 52px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .f_icons {
+    margin: 0;
+  }
+
+  .copyright {
+    margin-top: 35px;
+  }
 }
 
+@media (max-width: 630px) {
+  h1 {
+    font-size: 3.3rem;
+    line-height: 5rem;
+  }
+
+  h2 {
+    font-size: 3.3rem;
+    margin-bottom: 35px;
+  }
+
+  section.team h2 {
+    margin-bottom: 21%;
+  }
+
+  header nav ul li a {
+    font-size: 1.8rem;
+    padding: 1.4rem;
+  }
+
+  header p {
+    display: none;
+  }
+
+  section.hero p,
+  section.features p,
+  section.projects p {
+    font-size: 1.8rem;
+  }
+
+  .button {
+    margin: 19px 0 80px 0;
+  }
+
+  .terminal-menu,
+  .inicio-screen {
+    width: 320px;
+  }
+
+  section.features {
+    margin: 90px 0;
+  }
+
+  .features-menu,
+  .features-screen {
+    width: 327px;
+    text-align: left;
+  }
+
+  section.projects {
+    margin: 80px 0;
+  }
+
+  section.projects p {
+    margin-bottom: 50px;
+  }
+
+  .projects p {
+    padding-right: 0;
+  }
+
+  section.team {
+    margin: 97px 0;
+  }
+
+  section.team .container {
+    max-width: 236px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+
+  .card {
+    padding: 15px 0px 0px 0px;
+  }
+
+  .card-image>img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 540px) {
+  nav {
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 4px;
+    width: 80%;
+    margin: 6px auto;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #292E39;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: unset;
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(8px, 8px);
+    border-radius: 5px;
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -6px);
+    border-radius: 5px;
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+  }
 }

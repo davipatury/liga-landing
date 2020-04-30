@@ -1,7 +1,7 @@
 /*Terminal*/
-consoleText(['Hello World', '(・_・)ノ'], 'text1', ['yellow', 'white']);
+consoleText(['Hello World'], 'text1', ['orange']);
 consoleText(['npm install liga'], 'text2', ['lightblue']);
-consoleText(['./sermembro', '⚡️'], 'text3', ['lightgreen']);
+consoleText(['./sermembro',], 'text3', ['lightgreen']);
 
 function consoleText(words, id, colors) {
  if (colors === undefined) colors = ['#fff'];
