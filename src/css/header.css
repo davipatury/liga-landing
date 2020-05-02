@@ -1,7 +1,10 @@
 header .container {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   width: 90%;
   max-width: 1232px;
   margin: auto;
@@ -14,8 +17,10 @@ header .container {
  }
  
  header .logo-liga {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
  }
 
  header p {
@@ -23,6 +28,7 @@ header .container {
  }
  
  header nav ul {
+  display: -webkit-box;
   display: flex;
  }
  
@@ -36,6 +42,7 @@ header .container {
   text-transform: uppercase;
   font-size: 1.9rem; 
   padding: 2.4rem;
+  -webkit-transition: all 250ms linear 0s;
   transition: all 250ms linear 0s;
  }
  
