@@ -275,7 +275,7 @@ section.features p {
 }
 
 .feature-text {
-  padding: 6%;
+  padding: 20px 80px 0px 80px;
   -webkit-padding-start: 14%;
   display: -webkit-box;
   display: -ms-flexbox;
