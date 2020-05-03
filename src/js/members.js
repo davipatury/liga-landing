@@ -67,8 +67,6 @@ function createCardContent({name, role, social}) {
 
     const cardSocial = createCardSocial(social);
 
-    console.log(cardSocial)
-
     cardInfo.append(roleText, cardSocial);
     cardContent.append(cardTitle, cardInfo);
     
