@@ -1,69 +1,94 @@
-/*Terminal*/
-consoleText(['Hello World'], 'text1', ['orange']);
-consoleText(['npm install liga'], 'text2', ['lightblue']);
-consoleText(['./sermembro',], 'text3', ['lightgreen']);
+const codeBlocks = document.getElementsByClassName("codeblock");
+const buttons = document.getElementById("feature-list");
+const contents = document.getElementById("feature-container");
 
-function consoleText(words, id, colors) {
- if (colors === undefined) colors = ['#fff'];
- var visible = true;
- var con = document.getElementById('console');
- var letterCount = 1;
- var x = 1;
- var waiting = false;
- var target = document.getElementById(id)
- target.setAttribute('style', 'color:' + colors[0])
- window.setInterval(function () {
+/*
+    CODE BLOCKS
+*/
+const colors = ["orange", "lightblue", "lightgreen"];
+const snippets = [
+    "Hello World",
+    "npm install liga",
+    "python main.py",
+    "go mod init liga",
+    "gcc -o main.c liga"
+];
 
-  if (letterCount === 0 && waiting === false) {
-   waiting = true;
-   target.innerHTML = words[0].substring(0, letterCount)
-   window.setTimeout(function () {
-    var usedColor = colors.shift();
-    colors.push(usedColor);
-    var usedWord = words.shift();
-    words.push(usedWord);
-    x = 1;
-    target.setAttribute('style', 'color:' + colors[0])
-    letterCount += x;
-    waiting = false;
-   }, 1000)
-  } else if (letterCount === words[0].length + 1 && waiting === false) {
-   waiting = true;
-   window.setTimeout(function () {
-    x = -1;
-    letterCount += x;
-    waiting = false;
-   }, 1000)
-  } else if (waiting === false) {
-   target.innerHTML = words[0].substring(0, letterCount)
-   letterCount += x;
-  }
- }, 120)
- window.setInterval(function () {
-  if (visible === true) {
-   con.className = 'console-underscore hidden'
-   visible = false;
-
-  } else {
-   con.className = 'console-underscore'
-
-   visible = true;
-  }
- }, 400)
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-/*Feature*/
-const lista = document.getElementById("feature-list");
-const listaBotoes = Array.from(lista.children);
+function writing(element) {
+    /* selects a random word and a random color */
+    let selected = snippets[Math.floor(Math.random() * snippets.length)];
+    element.style.color = colors[Math.floor(Math.random() * colors.length)];
 
-const textContainer = document.getElementById("feature-container");
-const listaText = Array.from(textContainer.children);
+    const typing = function () {
+        /* turns a "word" into an array like ["w", "o", "r", "d"]; */
+        let word = selected.split("");
+        const loop = async function () {
+            /*
+             the function will call itself unless the word is empty
+             ex:
+                element             array
+                ""                  ["w", "o", "r", "d"]
+                "w"                 ["o", "r", "d"]
+                "wo"                ["r", "d"]
+                "wor"               ["d"]
+                "word"              []
+            
+             then it will call the deleting function
+            */
+            if (word.length > 0) {
+                element.innerHTML += word.shift();
+            } else {
+                await sleep(700);
+                deleting();
+                return;
+            };
+            setTimeout(loop, 150);
+        };
+        loop();
+    };
 
-listaBotoes.forEach((botao, indexBotao) => {
- botao.addEventListener("click", (e) => {
-  listaText.forEach((text, indexText) => {
-   const displayType = indexBotao === indexText ? "grid" : "none";
-   text.style.display = displayType;
-  });
- });
+    const deleting = function () {
+        /* turns a "word" into an array like ["w", "o", "r", "d"]; */
+        let word = selected.split("");
+        const loop = async function () {
+            /*
+             the function will call itself unless the word is empty
+             ex:
+                element             array
+                "word"              ["w", "o", "r", "d"]
+                "wor"               ["w", "o", "r"]
+                "wo"                ["w", "o"]
+                "w"                 ["w"]
+                ""                  []
+
+             then it will call the writing function all over again
+            */
+            if (word.length > 0) {
+                word.pop();
+                element.innerHTML = word.join("");
+            } else {
+                await sleep(700);
+                writing(element);
+                return;
+            };
+            setTimeout(loop, 150);
+        };
+        loop();
+    };
+    typing();
+};
+
+[...codeBlocks].forEach((item) => writing(item));
+
+[...buttons.children].forEach((botao, indexBotao) => {
+    botao.addEventListener("click", (e) => {
+        [...contents.children].forEach((text, indexText) => {
+            const displayType = indexBotao === indexText ? "grid" : "none";
+            text.style.display = displayType;
+        });
+    });
 });
